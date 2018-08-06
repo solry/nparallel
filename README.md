@@ -39,6 +39,7 @@ Allows to create parallel threads or processes for:
 
 **Example**:
     
+    
         import nparallel
         
         def some_func(pos_arg, keyword_arg):
