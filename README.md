@@ -35,3 +35,17 @@ Allows to create parallel threads or processes for:
     outputs:
     
         output:     list with result of methods execution
+
+
+**Example**:
+    
+        import nparallel
+        
+        def some_func(pos_arg, keyword_arg):
+            return pos_arg, keyword_arg
+            
+        list_of_args = ['1','2','3']
+        
+        nparallel.thread(some_func, list_of_args, keyword_arg='this is kwarg')
+ 
+        Out[7]: [('3', 'this is kwarg'), ('1', 'this is kwarg'), ('2', 'this is kwarg')]
