@@ -4,7 +4,9 @@ Easy-to-use concurrent.futures wrapper
 Allows to create parallel threads or processes for:
 1)  **Funtions call**:
     def thread(function, inputs, *args, **kwargs)
+    
     def process(function, inputs, *args, **kwargs)
+    
     inputs:
         function:   function object
         inputs:     any iterator that will be passed as first argument to function call
